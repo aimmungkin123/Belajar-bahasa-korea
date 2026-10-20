@@ -1,0 +1,18 @@
+{
+  "name": "Belajar Korea - Latihan Kosakata",
+  "short_name": "Belajar Korea",
+  "description": "Latihan kosakata bahasa Korea dengan suara.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f4ed",
+  "theme_color": "#f7f4ed",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

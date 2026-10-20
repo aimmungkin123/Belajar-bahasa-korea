@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="Latihan kosakata bahasa Korea dengan suara.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <title>Belajar Korea</title>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand-mark">한</div>
+      <div>
+        <p class="eyebrow">LATIHAN HARIAN</p>
+        <h1>Belajar Korea</h1>
+      </div>
+      <button id="resetBtn" class="icon-btn" title="Mulai ulang sesi" aria-label="Mulai ulang sesi">↻</button>
+    </header>
+
+    <section class="stats" aria-label="Progres">
+      <div><span class="stat-number" id="progressText">1/20</span><span class="stat-label">Soal</span></div>
+      <div><span class="stat-number" id="correctText">0</span><span class="stat-label">Benar</span></div>
+      <div><span class="stat-number" id="streakText">0</span><span class="stat-label">Beruntun</span></div>
+    </section>
+    <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+
+    <section class="question-card">
+      <div class="card-meta">
+        <span class="tag">PEMULA</span>
+        <span id="categoryText" class="muted">Ungkapan dasar</span>
+      </div>
+      <p class="prompt">Apa bahasa Koreanya?</p>
+      <h2 id="indonesianWord">Terima kasih</h2>
+      <p class="hint">Ucapkan dalam bahasa Korea</p>
+
+      <button id="micBtn" class="mic-button" aria-label="Mulai berbicara">
+        <span class="mic-icon">🎙️</span>
+      </button>
+      <p id="micLabel" class="mic-label">Ketuk mikrofon untuk menjawab</p>
+      <p id="transcript" class="transcript" aria-live="polite"></p>
+      <div id="feedback" class="feedback" aria-live="polite"></div>
+
+      <div id="answerPanel" class="answer-panel hidden">
+        <p class="answer-label">JAWABAN YANG BENAR</p>
+        <div class="hangul-row">
+          <strong id="hangulAnswer">감사합니다</strong>
+          <button id="speakAnswerBtn" class="small-icon-btn" aria-label="Dengarkan pelafalan">🔊</button>
+        </div>
+        <p id="romanization" class="romanization">gamsahamnida</p>
+        <p id="extraNote" class="answer-note"></p>
+      </div>
+    </section>
+
+    <div class="actions">
+      <button id="showAnswerBtn" class="secondary-btn">Lihat Jawaban</button>
+      <button id="nextBtn" class="primary-btn" disabled>Soal Berikutnya <span>→</span></button>
+    </div>
+
+    <section class="bottom-note">
+      <span>💡</span>
+      <p>Tips: ucapkan dengan jelas. Jika pengenalan suara keliru, coba lagi di tempat yang lebih tenang.</p>
+    </section>
+    <footer>Progres disimpan di perangkat ini.</footer>
+  </main>
+  <div id="completion" class="completion hidden">
+    <div class="completion-card">
+      <div class="completion-icon">🎉</div>
+      <h2>Sesi selesai!</h2>
+      <p id="summaryText">Kamu sudah menyelesaikan latihan hari ini.</p>
+      <button id="againBtn" class="primary-btn">Latihan Lagi ↻</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
