@@ -14,12 +14,21 @@
     <header class="topbar">
       <div class="brand-mark">한</div>
       <div>
-        <p class="eyebrow">LATIHAN HARIAN</p>
+        <p class="eyebrow">LATIHAN HARIAN · V2</p>
         <h1>Belajar Korea</h1>
       </div>
       <button id="resetBtn" class="icon-btn" title="Mulai ulang sesi" aria-label="Mulai ulang sesi">↻</button>
     </header>
 
+    <section class="library-bar">
+      <label for="modeSelect">Mode latihan</label>
+      <select id="modeSelect">
+        <option value="new">Kosakata campuran</option>
+        <option value="review">Ulangi kata yang sulit</option>
+        <option value="all">Semua kata (sesi panjang)</option>
+      </select>
+      <span id="libraryCount" class="library-count">Kumpulan kosakata</span>
+    </section>
     <section class="stats" aria-label="Progres">
       <div><span class="stat-number" id="progressText">1/20</span><span class="stat-label">Soal</span></div>
       <div><span class="stat-number" id="correctText">0</span><span class="stat-label">Benar</span></div>
@@ -63,7 +72,7 @@
       <span>💡</span>
       <p>Tips: ucapkan dengan jelas. Jika pengenalan suara keliru, coba lagi di tempat yang lebih tenang.</p>
     </section>
-    <footer>Progres disimpan di perangkat ini.</footer>
+    <footer>Progres kata disimpan di perangkat ini. Kumpulan kosakata dapat terus ditambah.</footer>
   </main>
   <div id="completion" class="completion hidden">
     <div class="completion-card">

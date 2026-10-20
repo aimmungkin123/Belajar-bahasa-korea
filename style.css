@@ -71,3 +71,8 @@ footer { text-align: center; color: #929187; font-size: 11px; margin-top: 24px; 
 .completion-card p { color: var(--muted); line-height: 1.55; margin-bottom: 22px; }
 .completion-card button { width: 100%; }
 @media (min-width: 480px) { .app { padding-top: 34px; } .question-card { padding: 27px 28px 24px; } }
+
+.library-bar { display: grid; grid-template-columns: auto 1fr; gap: 7px 12px; align-items: center; margin: 0 0 14px; }
+.library-bar label { color: var(--muted); font-size: 12px; font-weight: 700; }
+.library-bar select { width: 100%; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); padding: 10px 12px; color: var(--ink); font: inherit; font-size: 13px; }
+.library-count { grid-column: 1 / -1; color: var(--muted); font-size: 11px; }
